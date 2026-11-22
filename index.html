@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raman Kumar Pandey — How I Work</title>
+<meta name="description" content="Product Owner working on B2B SaaS. How I work: my loop, my principles, and the checks I use when AI is part of the process.">
+<meta name="author" content="Raman Kumar Pandey">
+<meta name="theme-color" content="#F6F7F9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raman Kumar Pandey — How I Work">
+<meta property="og:description" content="Product Owner working on B2B SaaS. My loop, my principles, and the checks I use when AI is part of the process.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4FD8'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Arial,sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap">
+<style>
+:root{
+  /* Change --accent to restyle the page. Alternatives: #0F766E (teal), #7C3AED (violet). */
+  --accent:#1F4FD8;
+  --accent-tint:#E8EDFB;
+  --ink:#14161A;
+  --text:#3F444C;
+  --muted:#5A6070;
+  --ground:#F6F7F9;
+  --surface:#FFFFFF;
+  --line:#E3E5EA;
+  --amber:#B45309;
+  --amber-ink:#8A4B08;
+  --amber-bg:#FFF8EE;
+  --head:'Space Grotesk','Helvetica Neue',Arial,sans-serif;
+  --body:Inter,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@supports (background:color-mix(in srgb,red 10%,white)){
+  :root{--accent-tint:color-mix(in srgb,var(--accent) 12%,#fff)}
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:inherit;text-underline-offset:4px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:16px;top:-64px;z-index:10;padding:12px 16px;background:var(--ink);color:#fff;border-radius:8px}
+.skip:focus{top:16px}
+
+.wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
+.section{padding-top:88px;padding-bottom:88px}
+.band{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+h1,h2,h3{margin:0;font-family:var(--head);font-weight:600;text-wrap:balance}
+h1{margin-top:20px;max-width:980px;font-size:clamp(34px,4.6vw,58px);line-height:1.08;letter-spacing:-.02em}
+h2{margin-top:12px;max-width:760px;font-size:clamp(28px,3.4vw,42px);line-height:1.12;letter-spacing:-.015em}
+.nb{white-space:nowrap}
+.label{margin:0;font-size:15px;font-weight:600;color:var(--accent)}
+.intro{margin:16px 0 0;max-width:680px;color:var(--text)}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding-top:20px;padding-bottom:20px}
+.brand{font-family:var(--head);font-weight:600;font-size:18px;letter-spacing:-.01em}
+.top nav{display:flex;flex-wrap:wrap;gap:0 24px}
+.top nav a{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:500}
+
+.hero{padding-top:64px;padding-bottom:96px}
+.lead{margin:28px 0 0;max-width:660px;font-size:19px;line-height:1.6;color:var(--text)}
+.actions{margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;background:var(--accent);color:#fff;border-radius:8px;font-size:16px;font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(.92)}
+.textlink{display:inline-flex;align-items:center;min-height:44px;font-size:16px;font-weight:500}
+
+.legend{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font-size:14px;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;font-size:13px;font-weight:600}
+.chip.ai{background:var(--accent-tint);color:var(--accent)}
+.chip.me{border:1px solid var(--amber);background:var(--amber-bg);color:var(--amber-ink)}
+.chips{margin-top:auto;padding-top:6px;display:flex;flex-wrap:wrap;gap:8px}
+
+.grid{margin:40px 0 0;padding:0;list-style:none;display:grid;gap:16px}
+.grid.loop,.grid.checks{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+.grid.rules{grid-template-columns:repeat(auto-fit,minmax(min(480px,100%),1fr));gap:24px}
+.grid.flows{grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px}
+.grid.tpls{grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:24px}
+
+.card{display:flex;flex-direction:column;gap:12px;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.band .card{background:var(--ground)}
+.card h3{font-size:22px;line-height:1.25}
+.card p{margin:0;color:var(--text)}
+.card.small{gap:10px;padding:24px}
+.card.small h3{font-size:20px}
+.card.small p{font-size:16px;line-height:1.55}
+.band .card.back,.card.back{background:transparent;border:1px dashed #A9AFBB}
+.step-no{font-family:var(--head);font-size:14px;font-weight:600;color:var(--accent)}
+.card svg{display:block;color:var(--accent)}
+
+.steps{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;color:var(--text);font-size:16px;line-height:1.55}
+
+.tpl-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.tpl-head h3{font-size:20px}
+.copy{min-height:44px;padding:0 16px;background:var(--surface);color:var(--ink);border:1px solid #C5CAD3;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.copy:hover{border-color:var(--ink)}
+pre{margin:0;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:8px;font-family:var(--mono);font-size:14px;line-height:1.65;color:var(--ink);white-space:pre-wrap;overflow-x:auto}
+.wide{margin-top:24px}
+.tablebox{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px;line-height:1.4}
+th{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);font-weight:600}
+td{height:44px;padding:0 16px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+
+.foot{background:var(--ink);color:#fff}
+.foot .label{color:#C4C9D2}
+.foot h2{margin-top:20px;color:#fff}
+.foot .actions{margin-top:28px}
+.foot .btn{background:#fff;color:var(--ink)}
+.foot .actions a:not(.btn){display:inline-flex;align-items:center;min-height:44px;font-size:16px;font-weight:500;color:#fff}
+.foot :focus-visible{outline-color:#fff}
+.legal{margin:48px 0 0;font-size:14px;color:#C4C9D2}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="wrap top">
+<div class="brand">Raman Kumar Pandey</div>
+<nav aria-label="Profiles">
+<a href="https://www.linkedin.com/in/raman-p-043090189/">LinkedIn</a>
+<a href="https://github.com/Raman09">GitHub</a>
+<a href="mailto:ramanpandey915@gmail.com">Email</a>
+</nav>
+</header>
+
+<main id="main">
+
+<section class="wrap hero" aria-labelledby="hero-title">
+<p class="label">Product Owner, AI product management</p>
+<h1 id="hero-title">I turn messy inputs into <span class="nb">build-ready</span> product work, and I check every AI output before it ships.</h1>
+<p class="lead">I’m a Product Owner with a QA foundation, working on B2B SaaS products. This page shows how I work: my loop, my principles, and the checks I use when AI is part of the process. It contains no client names, data, or company screens.</p>
+<div class="actions">
+<a class="btn" href="mailto:ramanpandey915@gmail.com">Email me</a>
+<a class="textlink" href="#loop">See how I work</a>
+</div>
+</section>
+
+<section class="band" id="loop" aria-labelledby="loop-title">
+<div class="wrap section">
+<p class="label">The loop</p>
+<h2 id="loop-title">How a piece of work moves from idea to measured result</h2>
+<p class="intro">Seven steps, then back to the start. Where AI is involved, I validate its output before the work moves on.</p>
+<div class="legend">
+<span class="chip ai">AI helps</span>
+<span class="chip me">I validate</span>
+<span>Where both appear, AI does a first pass and I do the check.</span>
+</div>
+<ol class="grid loop" role="list">
+<li class="card small">
+<span class="step-no">01</span>
+<h3>Idea</h3>
+<p>Notes, reports and requests come in.</p>
+</li>
+<li class="card small">
+<span class="step-no">02</span>
+<h3>Requirement</h3>
+<p>Tickets written line by line from the source.</p>
+<div class="chips"><span class="chip ai">AI helps</span><span class="chip me">I validate</span></div>
+</li>
+<li class="card small">
+<span class="step-no">03</span>
+<h3>Prototype</h3>
+<p>An interactive HTML prototype built with Claude. The ticket points to it.</p>
+<div class="chips"><span class="chip ai">AI helps</span><span class="chip me">I validate</span></div>
+</li>
+<li class="card small">
+<span class="step-no">04</span>
+<h3>Build</h3>
+<p>Developers build from the ticket and its prototype.</p>
+</li>
+<li class="card small">
+<span class="step-no">05</span>
+<h3>Test</h3>
+<p>An AI agent runs the traced test catalog in a real browser and reports pass or fail with evidence.</p>
+<div class="chips"><span class="chip ai">AI helps</span><span class="chip me">I validate</span></div>
+</li>
+<li class="card small">
+<span class="step-no">06</span>
+<h3>Release</h3>
+<p>Plain-language notes on what the customer sees or can do.</p>
+</li>
+<li class="card small">
+<span class="step-no">07</span>
+<h3>Measure</h3>
+<p>Funnel tracking shows what happened and feeds the next idea.</p>
+</li>
+<li class="card small back">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4"></path><path d="M10 6l-6 6 6 6"></path></svg>
+<h3>Back to 01</h3>
+<p>What I measure becomes the next idea.</p>
+</li>
+</ol>
+</div>
+</section>
+
+<section id="principles" aria-labelledby="principles-title">
+<div class="wrap section">
+<p class="label">Principles</p>
+<h2 id="principles-title">Six rules I work by</h2>
+<div class="grid rules">
+<article class="card">
+<h3>Write only what the source supports.</h3>
+<p>Every requirement traces back to something someone said or wrote. Where the source is thin, I flag the gap instead of filling it in.</p>
+</article>
+<article class="card">
+<h3>AI drafts, I validate.</h3>
+<p>I use AI to draft tickets, requirement documents and test cases, then check each output against the source before anyone else sees it. AI saves the typing; the checking stays with me.</p>
+</article>
+<article class="card">
+<h3>Show, then specify.</h3>
+<p>I build a clickable prototype first and let the ticket point to it instead of describing every element in words. Each ticket gets only the UI that belongs to it.</p>
+</article>
+<article class="card">
+<h3>Never overwrite the current version.</h3>
+<p>When a change would alter what exists today, the current version stays the default and the change is added as a switch. Reviewers compare both in one place.</p>
+</article>
+<article class="card">
+<h3>Look at how it works live first.</h3>
+<p>Before I redesign a screen, I check how it behaves in production and design inside the same patterns. I don’t borrow patterns from other flows.</p>
+</article>
+<article class="card">
+<h3>Say what the customer sees.</h3>
+<p>Release notes and help copy describe what a customer sees or can do, in plain language. Internal work gets one short line.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="band" id="workflows" aria-labelledby="workflows-title">
+<div class="wrap section">
+<p class="label">How I do it</p>
+<h2 id="workflows-title">Three workflows, step by step</h2>
+<div class="grid flows">
+<article class="card">
+<h3>Messy inputs to build-ready tickets</h3>
+<p>The structure stays fixed, so developers always know where to look.</p>
+<ol class="steps">
+<li>Collect the source: meeting notes, reports and requests.</li>
+<li>Draft with AI, then check every line against the source.</li>
+<li>Use one structure: Summary, Description, Requirement, Acceptance Criteria. A section appears only when the source supports it.</li>
+<li>Never invent acceptance criteria. Flag what the source is missing.</li>
+<li>Put the product area in the heading so tickets group cleanly.</li>
+<li>Keep Requirement to what the assignee has to do, and keep related changes in one ticket.</li>
+</ol>
+</article>
+<article class="card">
+<h3>AI-driven testing with evidence</h3>
+<p>The agent does the running; I own the review.</p>
+<ol class="steps">
+<li>Build a test catalog and trace every case to a Jira ticket.</li>
+<li>Add regression checks that protect behavior that already works.</li>
+<li>Write a protocol an AI agent can follow in a real browser on a staging environment.</li>
+<li>The agent reports pass or fail for each case, with evidence.</li>
+<li>I review the evidence, not just the verdict.</li>
+</ol>
+</article>
+<article class="card">
+<h3>Prototyping with Claude</h3>
+<p>Reviewers react to something real before anything is built.</p>
+<ol class="steps">
+<li>Check how the screen works live and note its patterns.</li>
+<li>Build an interactive HTML prototype with Claude.</li>
+<li>Keep the current version as the default and add each change as a switch in the same prototype.</li>
+<li>Write a minimal ticket that points to the prototype and says which state to render.</li>
+<li>Attach only the UI that belongs to that ticket.</li>
+</ol>
+</article>
+</div>
+</div>
+</section>
+
+<section id="checks" aria-labelledby="checks-title">
+<div class="wrap section">
+<p class="label">Quality</p>
+<h2 id="checks-title">How I catch AI mistakes</h2>
+<p class="intro">Four checks I run before anything AI-generated goes further.</p>
+<div class="grid checks">
+<article class="card small">
+<h3>Trace it</h3>
+<p>Every line of an AI draft has to map to the source. Anything that doesn’t is removed or flagged.</p>
+</article>
+<article class="card small">
+<h3>Check the evidence</h3>
+<p>For test runs, I look at the evidence behind each pass or fail instead of trusting the verdict.</p>
+</article>
+<article class="card small">
+<h3>Don’t let it fill gaps</h3>
+<p>Requirements, acceptance criteria and examples are never added to cover missing information. The gap gets flagged.</p>
+</article>
+<article class="card small">
+<h3>Own the output</h3>
+<p>Nothing AI-generated goes to a developer, a customer or a stakeholder until I’ve checked it.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="band" id="templates" aria-labelledby="templates-title">
+<div class="wrap section">
+<p class="label">Templates</p>
+<h2 id="templates-title">Copy-ready templates</h2>
+<p class="intro">Written for this page. Copy any of them.</p>
+<div class="grid tpls">
+<div class="card">
+<div class="tpl-head"><h3>Ticket</h3><button class="copy" type="button" data-copy="tpl-ticket" aria-live="polite" hidden>Copy</button></div>
+<pre id="tpl-ticket">Summary
+Product area — what changes (short)
+
+Description
+One or two sentences. Link the prototype if there is a UI change.
+
+Requirement
+• Only what the assignee has to do
+• One bullet per action
+
+Acceptance Criteria
+1. Testable, and taken from the source
+2. Never invented to fill a gap</pre>
+</div>
+<div class="card">
+<div class="tpl-head"><h3>AI output check</h3><button class="copy" type="button" data-copy="tpl-check" aria-live="polite" hidden>Copy</button></div>
+<pre id="tpl-check">Before AI output goes anywhere
+
+[ ] Every statement traces to the source
+[ ] Nothing added that the source does not support
+[ ] Gaps are flagged, not filled in
+[ ] Names, numbers and dates match the source
+[ ] A human has reviewed it</pre>
+</div>
+</div>
+<div class="card wide">
+<div class="tpl-head"><h3>Test run report</h3><button class="copy" type="button" data-text="Test case&#9;Linked ticket&#9;Expected result&#9;Result&#9;Evidence&#9;Reviewed by" aria-live="polite" hidden>Copy header row</button></div>
+<div class="tablebox" role="region" aria-label="Test run report template. Scrolls sideways on small screens." tabindex="0">
+<table>
+<thead>
+<tr>
+<th scope="col">Test case</th>
+<th scope="col">Linked ticket</th>
+<th scope="col">Expected result</th>
+<th scope="col">Result</th>
+<th scope="col">Evidence</th>
+<th scope="col">Reviewed by</th>
+</tr>
+</thead>
+<tbody>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="foot" id="contact">
+<div class="wrap section">
+<p class="label">Contact</p>
+<h2>Want to talk about how I work?</h2>
+<div class="actions">
+<a class="btn" href="mailto:ramanpandey915@gmail.com">Email me</a>
+<a href="https://www.linkedin.com/in/raman-p-043090189/">LinkedIn</a>
+<a href="https://github.com/Raman09">GitHub</a>
+</div>
+<p class="legal">© 2026 Raman Kumar Pandey</p>
+</div>
+</footer>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('button.copy');
+  Array.prototype.forEach.call(buttons, function (btn) {
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      var label = btn.textContent;
+      var source = btn.getAttribute('data-copy');
+      var text = source ? document.getElementById(source).textContent : btn.getAttribute('data-text');
+
+      function finish(ok) {
+        btn.textContent = ok ? 'Copied' : 'Select and press Ctrl+C';
+        setTimeout(function () { btn.textContent = label; }, 1800);
+      }
+
+      function fallback() {
+        var area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', '');
+        area.style.position = 'fixed';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        document.body.removeChild(area);
+        finish(ok);
+      }
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { finish(true); }, fallback);
+      } else {
+        fallback();
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
